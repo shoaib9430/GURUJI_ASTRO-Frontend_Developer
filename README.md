@@ -1,4 +1,5 @@
-# [GURUJI_ASTRO-Frontend_Developer](https://astroguruji-frontend.netlify.app/)
+# [GURUJI_ASTRO-Frontend_Developer]
+(https://astroguruji-frontend.netlify.app/)
 
 The homepage of Guruji Astro
 
@@ -10,7 +11,7 @@ The homepage of Guruji Astro
 Clone the project
 
 ```bash
-  
+  git clone https://github.com/shoaib9430/GURUJI_ASTRO-Frontend_Developer
 ```
 
 Install dependencies
@@ -37,7 +38,7 @@ Java, Data Structures and Algorithms , Javascript, HTML, CSS , React , Redux , N
 
 ## Authors
 
-- 
+- [shoaib9430](https://www.github.com/shoaib9430)
 
 ## 🚀 About Me
 I'm a full stack developer...
