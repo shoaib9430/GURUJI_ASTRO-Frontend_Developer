@@ -1,4 +1,4 @@
-## [GURUJI_ASTRO-Frontend_Developer](https://astroguruji-frontend.netlify.app/)
+# [GURUJI_ASTRO-Frontend_Developer](https://astroguruji-frontend.netlify.app/)
 
 The homepage of Guruji Astro
 
@@ -25,9 +25,9 @@ Start the server
   npm run start
 ```
 
-## Hosted Link 
+# Hosted Link 
 
-  ## [Astro Guruji](https://astroguruji-frontend.netlify.app/)
+  # [Astro Guruji](https://astroguruji-frontend.netlify.app/)
 
 
 
