@@ -1,0 +1,382 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+body li {
+  list-style: none;
+}
+
+.container-main {
+  padding: 0 12rem 5rem 12rem;
+}
+
+.header {
+  padding: 2rem 12rem;
+  background: url("./assets//header/headerBg.png") no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header .navbar .nav-logo {
+  width: 6rem;
+  height: 6rem;
+}
+.header .navbar .nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.header .navbar .nav-links li {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header .navbar .nav-links li:hover {
+  color: #D87122;
+}
+.header .text-part {
+  text-align: center;
+}
+.header .text-part .heading-primary {
+  font-weight: 700;
+  font-size: 58.4047px;
+  letter-spacing: 0.085em;
+  color: #FDFDFD;
+}
+.header .text-part .para {
+  font-size: 1.6rem;
+  margin-top: 2.4rem;
+}
+.header .cta-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.header .cta-bottom .img-row {
+  display: flex;
+  gap: 4rem;
+}
+@media screen and (max-width: 1000px) {
+  .header .cta-bottom .img-row {
+    flex-wrap: wrap;
+  }
+}
+.header .cta-bottom .img-row .img {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.header .cta-bottom .img-row .img img {
+  width: 5rem;
+}
+.header .cta-bottom .dots {
+  align-self: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1.6rem 5rem;
+  background-color: #D87122;
+  color: #FDFDFD;
+  display: inline-flex;
+  border-radius: 5rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  transition: all 0.3s;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(216, 113, 34, 0.8);
+}
+
+.content {
+  padding: 6.7rem 11rem;
+}
+.content .heading-part {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.content .heading-part img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.content .heading-part .heading-secondary {
+  color: #D87122;
+  font-size: 3.2rem;
+}
+
+.testimonial {
+  background-color: #FFEFE3;
+}
+.testimonial .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.testimonial .heading .sun-img {
+  width: 8rem;
+}
+.testimonial .banner-box {
+  width: 100%;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial .banner-box .banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonial .banner-box .dots {
+  margin-top: 2rem;
+  align-self: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.premium-astro {
+  background-color: #FFEFE3;
+  padding-top: 2rem;
+}
+.premium-astro .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.7rem;
+}
+.premium-astro .cards .astro-card .img-part {
+  position: relative;
+}
+.premium-astro .cards .astro-card .img-part .profile-img {
+  height: 100%;
+}
+.premium-astro .cards .astro-card .img-part .text-part {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 46%);
+  padding: 1rem 1rem 2rem 1rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.premium-astro .cards .astro-card .img-part .text-part .top-text {
+  display: flex;
+  justify-content: space-between;
+}
+.premium-astro .cards .astro-card .img-part .text-part .top-text .status {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.2rem 1rem;
+  border-radius: 0.4rem;
+}
+.premium-astro .cards .astro-card .img-part .text-part .top-text .status i {
+  font-size: 1.2rem;
+  color: #5CE449;
+}
+.premium-astro .cards .astro-card .img-part .text-part .details i {
+  color: #FDCC0D;
+}
+.premium-astro .cards .astro-card .img-part .text-part .details .name {
+  font-weight: 600;
+}
+.premium-astro .cards .astro-card .img-part .text-part .details .title {
+  color: #FFDBC0;
+}
+.premium-astro .cards .astro-card .img-part .text-part .details .specio {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.premium-astro .cards .astro-card .img-part .text-part .details .rate {
+  display: flex;
+  flex-direction: column;
+  color: #5CE449;
+}
+.premium-astro .cards .astro-card .img-part .text-part .details .rate .price {
+  font-weight: 600;
+}
+.premium-astro .cards .astro-card .img-part .text-part .details .rate .price span {
+  font-size: 2.5rem;
+}
+
+.chart {
+  padding: 6.7rem 11rem;
+}
+.chart .chart-part {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chart .chart-part .col {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.chart .chart-part .chart-img {
+  position: relative;
+}
+.chart .chart-part .chart-img .chart-rotate {
+  width: 50rem;
+  animation: rotate infinite 15s linear;
+}
+.chart .chart-part .chart-img .sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.user-review {
+  background-color: #F2D2BA;
+}
+.user-review .pattern-part {
+  height: 10rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  background-image: url("./assets/userbottom.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.user-review .review-card {
+  margin-top: 5rem;
+  width: 100%;
+}
+.user-review .review-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  padding: 6rem 12rem;
+  background-color: #BD5300;
+  color: #fff;
+  display: flex;
+  gap: 10rem;
+}
+.footer .logo-part {
+  width: 25%;
+}
+.footer .logo-part .about-guruji .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+.footer .logo-part .about-guruji .logo .logo-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 4rem;
+}
+.footer .logo-part .about-guruji .logo .logo-box img {
+  width: 8rem;
+}
+.footer .logo-part .about-guruji .socialicons {
+  display: flex;
+  gap: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+.footer .logo-part .trusted .heading-tertiary {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.footer .logo-part .trusted .logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer .logo-part .trusted .logos .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background-color: #fff;
+}
+.footer .links-part {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: space-between;
+}
+.footer .links-part .footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer .links-part .footer-list .heading-list {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.footer .links-part .footer-list li {
+  cursor: pointer;
+}
+.footer .form-part {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 1.2rem;
+}
+.footer .form-part input,
+.footer .form-part textarea {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  border-radius: 0.4rem;
+}
+.footer .form-part .btn-submit {
+  background-color: #4B9C0C;
+  padding: 1.3rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+}/*# sourceMappingURL=App.css.map */

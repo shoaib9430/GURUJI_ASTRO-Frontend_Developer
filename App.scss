@@ -1,0 +1,930 @@
+ *,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+.container-main {
+    padding: 0 12rem 5rem 12rem;
+}
+
+.header {
+    padding: 2rem 12rem;
+    background: url("./assets//header/headerBg.png") no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+
+        .nav-logo {
+            width: 6rem;
+            height: 6rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+
+            li {
+                cursor: pointer;
+                transition: all .3s;
+
+                &:hover {
+                    color: #D87122;
+                }
+            }
+        }
+    }
+
+    .text-part {
+        text-align: center;
+
+        .heading-primary {
+            font-weight: 700;
+            font-size: 58.4047px;
+            letter-spacing: 0.085em;
+            color: #FDFDFD;
+        }
+
+        .para {
+            font-size: 1.6rem;
+            margin-top:
+                2.4rem;
+        }
+    }
+
+    .cta-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .img-row {
+            display: flex;
+            gap: 4rem;
+
+            @media screen and (max-width: 1000px) {
+                flex-wrap: wrap;
+            }
+
+            .img {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+
+                img {
+                    width: 5rem;
+                }
+            }
+        }
+
+        .dots {
+            align-self: center;
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}
+
+.btn {
+    padding: 1.6rem 5rem;
+    background-color: #D87122;
+    color: #FDFDFD;
+    display: inline-flex;
+    border-radius: 5rem;
+    font-weight: 600;
+    margin-top: 4rem;
+    transition: all .3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(#D87122, .8);
+    }
+}
+
+.content {
+    padding: 6.7rem 11rem;
+
+    .heading-part {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .heading-secondary {
+            color: #D87122;
+            font-size: 3.2rem;
+        }
+    }
+}
+
+.testimonial {
+    background-color: #FFEFE3;
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+
+        .sun-img {
+            width: 8rem;
+        }
+    }
+
+    .banner-box {
+        width: 100%;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        .banner {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .dots {
+            margin-top: 2rem;
+            align-self: center;
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}
+
+.premium-astro {
+    background-color: #FFEFE3;
+    padding-top: 2rem;
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3.7rem;
+
+        .astro-card {
+            .img-part {
+                position: relative;
+
+
+                .profile-img {
+                    height: 100%;
+                }
+
+                .text-part {
+                    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 46%);
+                    padding: 1rem 1rem 2rem 1rem;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+
+                    .top-text {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .status {
+                            background-color: rgba(0, 0, 0, .5);
+                            padding: .2rem 1rem;
+                            border-radius: .4rem;
+
+                            i {
+                                font-size: 1.2rem;
+                                color: #5CE449;
+                            }
+                        }
+                    }
+
+                    .details {
+                        i {
+                            color: #FDCC0D;
+                        }
+
+                        .name {
+                            font-weight: 600;
+                        }
+
+                        .title {
+                            color: #FFDBC0;
+                        }
+
+                        .specio {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                        }
+
+                        .rate {
+                            display: flex;
+                            flex-direction: column;
+                            color: #5CE449;
+
+                            .price {
+                                font-weight: 600;
+
+                                span {
+                                    font-size: 2.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.chart {
+    padding: 6.7rem 11rem;
+
+    .chart-part {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+        }
+
+        .chart-img {
+            position: relative;
+
+            .chart-rotate {
+                width: 50rem;
+                animation: rotate infinite 15s linear;
+            }
+
+            .sun {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.user-review {
+    background-color: #F2D2BA;
+
+    .pattern-part {
+        height: 10rem;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        background-image: url("./assets/userbottom.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .review-card {
+        margin-top: 5rem;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.footer {
+    padding: 6rem 12rem;
+    background-color: #BD5300;
+    color: #fff;
+    display: flex;
+    gap: 10rem;
+
+    .logo-part {
+        width: 25%;
+
+        .about-guruji {
+            .logo {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                margin-bottom: 3.5rem;
+
+                .logo-box {
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
+                    font-size: 4rem;
+
+                    img {
+                        width: 8rem;
+                    }
+                }
+            }
+
+            .socialicons {
+                display: flex;
+                gap: 2rem;
+                font-size: 2.5rem;
+                margin-bottom: 5rem;
+            }
+        }
+
+        .trusted {
+            .heading-tertiary {
+                font-size: 2.2rem;
+                margin-bottom: 1rem;
+            }
+
+            .logos {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+
+                .box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1rem;
+                    border-radius: .8rem;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    .links-part {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        justify-content: space-between;
+
+        .footer-list {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+            .heading-list {
+                font-size: 2.2rem;
+                margin-bottom: 1rem;
+                font-weight: 600;
+            }
+
+            li {
+                cursor: pointer;
+            }
+        }
+
+
+    }
+
+    .form-part {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        gap: 1.2rem;
+
+        input,
+        textarea {
+            padding: 1rem;
+            outline: none;
+            border: none;
+            font-family: inherit;
+            border-radius: .4rem;
+        }
+
+        .btn-submit {
+            background-color: #4B9C0C;
+            padding: 1.3rem;
+            text-align: center;
+            border-radius: .4rem;
+            cursor: pointer;
+            border: none;
+            color: #fff;
+            outline: none;
+            font-family: inherit;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+    }
+}
+.astrocard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  
+    &:hover {
+      box-shadow: black 2px 2px 20px;
+      border-radius: 10px;
+    }
+  
+    .astrocard__img {
+      position: relative;
+      width: 346px;
+      height: 408px;
+      background: black;
+      border-radius: 7.41429px;
+  
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        background-color: radial-gradient(
+          69.29% 49.88% at 102.32% 101.97%,
+          rgba(0, 0, 0, 0.7) 12.59%,
+          rgba(0, 0, 0, 0.372048) 45.56%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        border-radius: 7.41429px;
+      }
+  
+      .exp {
+        position: absolute;
+        width: 77px;
+        height: 11px;
+        left: 19px;
+        top: 19px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        mix-blend-mode: normal;
+        text-shadow: 0px 4.94286px 4.94286px rgba(0, 0, 0, 0.8);
+      }
+  
+      .online {
+        position: absolute;
+        right: 19px;
+        top: 19px;
+        color: white;
+        height: 29.18px;
+        width: 86px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 6.14286px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+  
+        div {
+          height: 10.82px;
+          width: 10.82px;
+          background: #2cdc00;
+          border-radius: 2rem;
+        }
+      }
+  
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4.94px;
+        position: absolute;
+        left: 10px;
+        top: 190px;
+  
+        .rate {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 7px;
+          .rateStar {
+            font-size: 16px;
+            color: #fdcc0d;
+            mix-blend-mode: normal;
+          }
+  
+          span {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+            mix-blend-mode: normal;
+            text-shadow: 0px 4.94286px 4.94286px rgba(0, 0, 0, 0.8);
+          }
+        }
+  
+        h2 {
+          font-weight: 600;
+          font-size: 22.2429px;
+          line-height: 33px;
+          color: #ffffff;
+          text-shadow: 0px 4.94286px 4.94286px rgba(0, 0, 0, 0.3),
+            0px 4.94286px 4.94286px rgba(0, 0, 0, 0.25);
+        }
+  
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffffff;
+          mix-blend-mode: normal;
+        }
+  
+        .head {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 1px;
+          color: #ffdbc0;
+          mix-blend-mode: normal;
+        }
+      }
+  
+      @media (max-width: 767px) {
+          width: 300px;
+          height: 400px;
+      }
+    }
+  
+    .astrocard__live {
+      position: absolute;
+      z-index: 4;
+      background: #833800;
+      padding: 10px;
+      width: 66.73px;
+      height: 66.73px;
+      border-radius: 2rem;
+      display: flex;
+      justify-content: center;
+      left: 139.64px;
+      top: 375.74px;
+      box-shadow: #fdfdfd 0px 3px 5px;
+  
+      @media (max-width: 767px) {
+          left: 118px;
+          top: 362px;
+      }
+    }
+  
+    .astrocard__contact {
+      display: flex;
+      gap: 0px;
+      margin-top: -4px;
+      width: 348px;
+      z-index: 3;
+      height: 51.9px;
+  
+      .chat {
+        width: 50%;
+        background-color: #a95210;
+        border: 2px solid #ffefe3;
+        border-right: 1px solid #ffefe3;
+        border-bottom-left-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 22.26px;
+        color: #fdfdfd;
+  
+        p {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 23px;
+        }
+      }
+  
+      .call {
+        width: 50%;
+        background-color: #a95210;
+        border: 2px solid #ffefe3;
+        border-right: 1px solid #ffefe3;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 22.26px;
+        color: #fdfdfd;
+  
+        p {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 23px;
+        }
+      }
+  
+      @media (max-width: 767px) {
+          width: 302px;
+      }
+    }
+  }
+
+  .astroCC {
+    .astro {
+      display: flex;
+      justify-content: center;
+  
+      .asto__container {
+        background-color: #ffefe3;
+        padding-top: 43px;
+        // height: 1620px;
+        width: 1224px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        .astro__head {
+          .car_head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 19px;
+  
+            span {
+              font-size: 32px;
+              font-weight: 700;
+              line-height: 40.96px;
+              letter-spacing: 0.085em;
+              color: var(--orangisB);
+              text-align: center;
+            }
+  
+            @media (max-width: 767px) {
+              gap: 8px;
+  
+              img {
+                height: 24px;
+              }
+  
+              span {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+  
+        .astro__card {
+          display: flex;
+          gap: 37px;
+          margin-top: 56px;
+          flex-wrap: wrap;
+          justify-content: center;
+  
+          .astro__card1 {
+            display: flex;
+            flex-direction: column;
+            gap: 25.14px;
+          }
+  
+          .astro__card2 {
+            margin-top: 44px;
+            display: flex;
+            flex-direction: column;
+            gap: 25.14px;
+          }
+  
+          .astro__card3 {
+            display: flex;
+            flex-direction: column;
+            gap: 25.14px;
+          }
+  
+          @media (max-width: 1110px) {  
+            justify-content: space-around;
+  
+            .astro__card2 {
+              margin-top: 0px;
+            }
+          }
+        }
+      }
+    }
+  
+.astro__bottom {
+      display: flex;
+      justify-content: center;
+  
+      img {
+        max-width: 1224px;
+        min-width: 360px;
+      }
+    }
+  }
+  .carousel {
+    display: flex;
+    justify-content: center;
+    
+  
+    .carousel__container {
+      background-color: #ffefe3;
+      // height: 1166px;
+      width: 1224px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .carousel__head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 29.81px;
+        gap: 25.19px;
+  
+        .sun {
+          width: 95.74px;
+          height: 92px;
+        }
+  
+        .car_head {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 19px;
+  
+          span {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 40.96px;
+            letter-spacing: 0.085em;
+            color: var(--orangisB);
+          }
+  
+          @media (max-width: 767px) {
+            gap: 10px;
+  
+            img {
+              height: 26px;
+            }
+  
+            span {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+  
+      .carousel__main {
+        margin-top: 41px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+  
+        .carousel__slides {
+          width: 929px;
+          // height: 390px;
+  
+          @media (max-width: 768px) {
+            width: 525px;
+  
+            .c__slider {
+              margin-left: 0px !important;
+            }
+          }
+  
+          @media (max-width: 525px) {
+            width: 375px;
+  
+            .c__slider {
+              margin-left: 0px !important;
+            }
+          }
+          
+  
+          .c__slider {
+            margin-left: -100px;
+          }
+        }
+  
+        .carousel__btn {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          height: 166px;
+          margin-bottom: 63.18px;
+          gap: 900px;
+          margin-top:-300px;
+  
+        @media (max-width:787px){
+          gap:10px;
+          margin-top:0px;
+        }
+          .slidBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 41.91px;
+            height: 41.91px;
+            border-radius: 2rem;
+            border: none;
+            background-color: #dfdfdf;
+            box-shadow: 0px 4.69444px 4.69444px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            z-index: 2;
+          }
+        }
+      }
+  
+      .carsouel__template {
+        margin-top:100px;
+        img {
+          width: 100%;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+      }
+  
+      .carsouel__dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 19px;
+        gap: 12.5px;
+  
+        div {
+          height: 16px;
+          width: 16px;
+          border: 2px solid #ed944e;
+          border-radius: 2rem;
+        }
+  
+        :first-child {
+          background-color: #87420c;
+        }
+      }
+    }
+    
+  }
+  
+  .slider-container {
+    position: relative;
+  }
+  
+  .image-container {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out, z-index 0.3s ease-in-out;
+    z-index: 0;
+  }
+  .image-container.active {
+    opacity: 1;
+    z-index: 2;
+    transform: scale(1.2);
+  }
+  
+  .slick-current .image-container {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .play-btn-cont {
+    position: absolute;
+    margin-top: -240px;
+    margin-left: 120px;
+  }
+
+  
+
+  
+  
