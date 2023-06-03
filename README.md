@@ -27,8 +27,6 @@ Start the server
 ```
 
 # Hosted Link 
-
-  # [Astro Guruji]
   (https://astroguruji-frontend.netlify.app/)
 
 
